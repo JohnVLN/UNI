@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fastFood()">Menu</button>
+    <div id="menu"></div>
+
+    <script>
+        function fastFood(){
+            let nome = prompt("Nome do Cliente");
+
+            var hotdog_q = prompt("HOTDOG - R$1,00");
+            var hamb_q = prompt("HAMBURGUER - R$1,30");
+            var chees_q = prompt("CHEESEBURGUER - R$1,50");
+            var refri_q = prompt("REFRIGERANTE - R$1,00");
+            var batata_q = prompt("BATATA FRITA - R$0,80");
+
+            var final = ((parseFloat(hotdog_q) * 1) + (parseFloat(hamb_q) * 1.30) + (parseFloat(chees_q) * 1.50) + (parseFloat(refri_q) * 1) + (parseFloat(batata_q) * 0.80));
+
+            document.getElementById("menu").innerHTML = ("Cliente " + nome + " - Total da compra = R$" + final);
+        }
+    </script>
+</body>
+</html>

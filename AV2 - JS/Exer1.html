@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="alunoInfo()">Calcular Nota</button>
+    <div id="notas"></div>
+    <div id="resultado"></div>
+
+    <script>
+        function alunoInfo() {
+            let nome = prompt("Insira o primerio nome");
+            let disciplina = prompt("Insira a disciplina")
+            var nota1 = prompt("Primeira nota");
+            var nota2 = prompt("Segunda nota");
+            var nota3 = prompt("Terceira nota");
+            document.getElementById("notas").innerHTML = ("Nota 1 = " + nota1 + " - Nota 2 = " + nota2 + " - Nota 3 = " + nota3);
+            
+            var media = ((parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3)
+            document.getElementById("resultado").innerHTML = ("Média aritmética das notas na disciplina " + disciplina + " é " + media);
+        }
+    </script>
+</body>
+</html>

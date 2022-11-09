@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ads()">Calculo do preço final</button>
+    <div id="preco_final"></div>
+
+    <script>
+        function ads(){
+            let produto = prompt("Nome do Produto");
+            var custo = prompt("Custo de Fábrica");
+            var impo = prompt("Taxas de Impostos");
+            var dist = prompt("Taxas dO Distribuidor");
+
+            var final = (parseFloat(custo) + parseFloat(impo) + parseFloat(dist));
+            document.getElementById("preco_final").innerHTML = ("O preço final do produto " + produto + " é " + final + ".")
+        }
+    </script>
+</body>
+</html>

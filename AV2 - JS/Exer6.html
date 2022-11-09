@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="conver()">Conversão $ - R$</button>
+    <div id="novo"></div>
+
+    <script>
+        function conver(){
+            var dolar = parseFloat(5.14);
+            
+            let valor = prompt("Valor em Reais");
+
+            var conv = (parseFloat(valor) / dolar)
+            document.getElementById("novo").innerHTML = (parseFloat(valor) + " reais são equívalentes à " + conv + " dólares.")
+        }
+    </script>
+</body>
+</html>

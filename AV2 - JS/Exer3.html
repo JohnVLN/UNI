@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="loja()">Nome e Total de Vendas</button>
+    <div id="nomeLoja"></div>
+    <div id="vendas_semestre"></div>
+
+    <script>
+        function loja(){
+            let nome = prompt("Insira o nome da loja");
+            var vendas = prompt("Insira o total de vendas em um ano");
+
+            document.getElementById("nomeLoja").innerHTML = ("Loja " + nome);
+
+            var vendas_s = (parseInt(vendas) / 2)
+            document.getElementById("vendas_semestre").innerHTML = ("O total de vendas semestrais foi de " + vendas_s);
+        }
+    </script>
+</body>
+</html>

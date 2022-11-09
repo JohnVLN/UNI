@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="contaInfo()">Informações da Conta</button>
+    <div id="info"></div>
+
+    <script>
+        function contaInfo(){
+            let nome = prompt("Nome do Correntista");
+            let banco = prompt("Nome do Banco");
+            let conta = prompt("Número da Conta");
+            var cheques = prompt("Valor total de cheques a debitar");
+            var dinheiro = prompt("Total de Dinheiro");
+            var cheques_total = prompt("Total de Cheques a Creditar");
+            var cred_limite = prompt("Limite de Crédito");
+            var saldo = prompt("Saldo Atual");
+
+            var saldo_dispo = ((parseInt(saldo) + parseInt(cheques) + parseInt(cred_limite)) - cheques)
+            document.getElementById("info").innerHTML = ("Correntista " + nome + " dono da conta " + conta + " do banco " + banco + " possuí R$" + saldo_dispo + " de saldo dispnível." )
+        }
+    </script>
+</body>
+</html>
