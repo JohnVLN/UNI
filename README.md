@@ -1,2 +1,3 @@
 # UNI
-Repository for studies and such.
+College repository
+Studies and such.
