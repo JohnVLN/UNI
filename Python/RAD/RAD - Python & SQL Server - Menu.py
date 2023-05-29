@@ -53,6 +53,7 @@ while i == 0:
         with open('relProfessores.txt', 'w') as f:
             for l in cursor:
                 f.write(str(l))
+                f.write("\n")
         print("Criado o relatório 'relProfessores'")
         
     #Exit programm
