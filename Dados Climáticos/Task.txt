@@ -1,0 +1,57 @@
+Usando os dados coletados e contidos no arquivo CSV "dados_climaticos.csv", que contém dados de temperatura máxima, temperatura mínima, umidade do ar e incidência de radiação UV para cada dia, de 01/01/2020 a 31/01/2023, crie um DataFrame Pandas e realize sua análise, respondendo às perguntas a seguir:
+
+Parte 1 - Análise: Responda às seguintes perguntas usando o Pandas.
+
+1. Qual é a temperatura média ao longo dos meses (para cada mês)?
+2. Qual foi a temperatura máxima registrada durante o período de análise?
+3. Em que mês ocorreu a umidade do ar média foi mais elevada?
+4. Qual foi o mês mais quente (com temperatura média mais alta)?
+5. Qual tendência pode ser detectada analisando os dados?
+6. Qual o valor médio de incidência de raios UV em 2022?
+7. Plote um gráfico (de linhas) de temperatura ao longo do tempo (todo o período).
+8. Crie um gráfico de barras que mostre a temperatura média por mês.
+
+Parte 2 - Questionário Técnico
+
+Responda às seguintes perguntas:
+Qual das seguintes afirmações é verdadeira sobre o Pandas?
+a) É uma linguagem de programação baseada em Python.
+b) É uma biblioteca para análise de dados em Python.
+c) É usado apenas para gráficos.
+d) É uma linguagem de consultas SQL.
+e) É usado em benchmark de dispositivos.
+
+Qual das seguintes afirmações é verdadeira sobre DataFrames em Pandas?
+a) Um DataFrame é um tipo de gráfico de duas dimensões.
+b) Um DataFrame é usado apenas para armazenar texto.
+c) Um DataFrame é uma estrutura de dados tabular.
+d) Um DataFrame não pode conter números.
+e) Um DataFrame é usado apenas para análise financeira.
+
+Para que são usados comumente os arquivos CSV na análise de dados?
+a) Para armazenar imagens.
+b) Para executar cálculos matemáticos.
+c) Para criar gráficos 3D.
+d) Para armazenar dados tabulares.
+e) Para programação de jogos.
+
+Qual é o objetivo da visualização de dados?
+a) Tornar os dados mais difíceis de entender.
+b) Ocultar informações importantes.
+c) Facilitar a comunicação de informações.
+d) Aumentar a complexidade dos dados.
+e) Criar dados falsos.
+
+O que podemos incluir em um relatório gerado com Pandas?
+a) Dados brutos apenas.
+b) Gráficos apenas.
+c) Texto e gráficos.
+d) Nada, Pandas não suporta relatórios.
+e) Apenas tabelas.
+
+Parte 3 - Geração de Relatório Final
+
+Criar um relatório simples em formato PDF que inclua:
+Uma breve introdução ao conjunto de dados, explicando o que significa cada dado contido nele.
+Uma tabela que mostre a temperatura média por mês.
+As respostas às perguntas anteriores (das Partes 1 e 2)
